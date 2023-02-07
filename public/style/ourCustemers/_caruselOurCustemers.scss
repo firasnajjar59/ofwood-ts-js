@@ -1,0 +1,44 @@
+.caruselOurCustemers{
+    background-color: $primary-color;
+    width: 100%;
+    padding: 3em 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    position: relative;
+    overflow-x: hidden;
+    .OurCustemers-title{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        h2{
+            color: white;
+            font-size: 3em;
+        }
+    }
+    .OurCustemersCards{
+        width: fit-content;
+        min-width: 100%;
+        margin: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        bottom: 3%;
+        left: 0;
+        .OurCustemersCard{
+            width:100%;
+            padding: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            img{
+                width: 20rem;
+                aspect-ratio: 1/1;
+                border-radius: 50%;
+                object-fit: cover;
+                border: 0.3em solid white; 
+            }
+        }
+    }
+}

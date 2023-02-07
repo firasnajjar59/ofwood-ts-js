@@ -1,0 +1,273 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #2A7C6F;
+}
+a:hover {
+  color: #2A7C6F;
+  text-decoration: underline;
+}
+
+.headerWrapper .logoAndMemberSection {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: flex-end;
+}
+.headerWrapper .logoAndMemberSection .memberSection {
+  color: #2A7C6F;
+}
+.headerWrapper .logoAndMemberSection .logoWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.headerWrapper .logoAndMemberSection .logoWrapper img {
+  width: 10rem;
+}
+.headerWrapper .logoAndMemberSection .hamburger {
+  display: flex;
+  justify-content: end;
+  color: #2A7C6F;
+  display: none;
+}
+.headerWrapper .navBarWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2em;
+}
+.headerWrapper .navBarWrapper .navLinks {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-between;
+  flex-grow: 1;
+  color: #2A7C6F;
+}
+.headerWrapper .navBarWrapper .searchWrapper {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  position: relative;
+}
+.headerWrapper .navBarWrapper .searchWrapper input {
+  border-top-left-radius: 0.3em;
+  border-bottom-left-radius: 0.3em;
+  border: 1px solid #2A7C6F;
+  border-right: none;
+  padding-left: 1em;
+}
+.headerWrapper .navBarWrapper .searchWrapper input::-moz-placeholder {
+  color: #2A7C6F;
+}
+.headerWrapper .navBarWrapper .searchWrapper input:-ms-input-placeholder {
+  color: #2A7C6F;
+}
+.headerWrapper .navBarWrapper .searchWrapper input::placeholder {
+  color: #2A7C6F;
+}
+.headerWrapper .navBarWrapper .searchWrapper input:focus {
+  border: 1px solid #2A7C6F;
+  outline: none;
+}
+.headerWrapper .navBarWrapper .searchWrapper button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #2A7C6F;
+  border-top-right-radius: 0.3em;
+  border-bottom-right-radius: 0.3em;
+  border: 1px solid #2A7C6F;
+  border-left: none;
+}
+.headerWrapper .navBarWrapper .searchWrapper button span {
+  padding: 0.3em;
+  color: aliceblue;
+}
+.headerWrapper .navBarWrapper .searchWrapper .search-display {
+  width: 100%;
+  background-color: white;
+  position: absolute;
+  top: 100%;
+  z-index: 150;
+  border: 1px solid #2A7C6F;
+}
+.headerWrapper .navBarWrapper .searchWrapper .search-display p {
+  padding: 0.5em;
+  margin: 0;
+}
+.headerWrapper .navBarWrapper .searchWrapper .search-display hr {
+  width: 100%;
+  height: 1px;
+  background-color: #2A7C6F;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+@media screen and (max-width: 600px) {
+  .headerWrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .headerWrapper .logoAndMemberSection {
+    display: flex;
+    justify-content: space-around;
+  }
+  .headerWrapper .logoAndMemberSection .logoWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .headerWrapper .logoAndMemberSection .logoWrapper .logoWrapper img {
+    width: 5rem;
+  }
+  .headerWrapper .logoAndMemberSection .hamburger {
+    display: flex;
+    justify-content: end;
+    color: #2A7C6F;
+  }
+  .headerWrapper .navBarWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .headerWrapper .navBarWrapper .searchWrapper {
+    width: 80%;
+  }
+  .headerWrapper .navBarWrapper .searchWrapper input {
+    flex-grow: 1;
+  }
+  .headerWrapper .navBarWrapper .navLinks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+.caruselOurCustemers {
+  background-color: #2A7C6F;
+  width: 100%;
+  padding: 3em 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  position: relative;
+  overflow-x: hidden;
+}
+.caruselOurCustemers .OurCustemers-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.caruselOurCustemers .OurCustemers-title h2 {
+  color: white;
+  font-size: 3em;
+}
+.caruselOurCustemers .OurCustemersCards {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  min-width: 100%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 3%;
+  left: 0;
+}
+.caruselOurCustemers .OurCustemersCards .OurCustemersCard {
+  width: 100%;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.caruselOurCustemers .OurCustemersCards .OurCustemersCard img {
+  width: 20rem;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 0.3em solid white;
+}
+
+.fixedContactUsPopupWrapper {
+  position: fixed;
+  right: 2%;
+  bottom: 5%;
+  z-index: 200;
+}
+.fixedContactUsPopupWrapper .fixedContactUsPopup {
+  position: relative;
+  width: 20em;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+.fixedContactUsPopupWrapper .fixedContactUsPopup .btn-popup {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  color: white;
+  padding: 1em;
+  background-color: #2A7C6F;
+  border: none;
+  border-radius: 2em;
+  cursor: pointer;
+}
+.fixedContactUsPopupWrapper .fixedContactUsPopup .popupWrapper {
+  position: absolute;
+  width: 20em;
+  height: 36em;
+  background-color: white;
+  box-shadow: 0px 0px 10px 2px gray;
+  top: 0;
+  right: 0;
+  border-radius: 2em;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.fixedContactUsPopupWrapper .fixedContactUsPopup .popupWrapper .profileSection {
+  flex-grow: 1;
+  margin-top: 2em;
+  display: flex;
+  flex-direction: column;
+  padding: 0 1em;
+}
+.fixedContactUsPopupWrapper .fixedContactUsPopup .popupWrapper .profileSection #closeBtn {
+  cursor: pointer;
+}
+.fixedContactUsPopupWrapper .fixedContactUsPopup .popupWrapper .profileSection div:nth-child(2) {
+  flex-grow: 1;
+}
+.fixedContactUsPopupWrapper .fixedContactUsPopup .popupWrapper input {
+  margin-bottom: 2em;
+  height: 3em;
+  border: none;
+}
+.fixedContactUsPopupWrapper .fixedContactUsPopup .popupWrapper input::-moz-placeholder {
+  padding-right: 1em;
+}
+.fixedContactUsPopupWrapper .fixedContactUsPopup .popupWrapper input:-ms-input-placeholder {
+  padding-right: 1em;
+}
+.fixedContactUsPopupWrapper .fixedContactUsPopup .popupWrapper input::placeholder {
+  padding-right: 1em;
+}/*# sourceMappingURL=login.css.map */

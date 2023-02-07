@@ -1,0 +1,98 @@
+.caruselWrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    width: 100%;
+    
+    h2{
+        color: $primary-color;
+    }
+  
+    .caruselcardsWrapper{
+        display: flex;
+        gap: 1em;
+        width: 90%;
+        margin: auto;
+        position: relative;
+        z-index: 1;
+        .caruselCardWrapper{
+            width: 25%;
+            position: relative;
+            z-index: 50;
+            .ribbon{
+                padding: 0.1em 0.4em;
+                background-color: $primary-color;
+                position: absolute;
+                right: 0;
+                top: 0;
+                // border-radius: 0.5em;
+                color: white;
+                font-size: 1.2em;
+            }
+            img{
+                cursor: pointer;
+                width: 100%;
+            }
+            .deatils{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                width: 100%;
+              
+                h3{
+                    color: $primary-color;
+                    font-size: 1.1em;
+                }
+                p{
+                    color: $primary-color;
+                    font-size: 1em;
+                }
+                button{
+                    width: 100%;
+                    border: none;
+                    background-color: $primary-color;
+                    padding: 0.5em;
+                    color: white;
+                    font-size: 1.2em;
+                }
+            }
+        }
+        .arrow-btn-left{
+            position: absolute;
+            z-index: 100;
+            left: 0;
+            top: 50%;
+            padding: 1em;
+            z-index: 100;
+            
+            transform: translate(-130%,-100%);
+           
+            img{
+                
+                width: 2rem;
+                color: $primary-color;
+                cursor: pointer;
+            }
+        }
+        .arrow-btn-right{
+            position: absolute;
+            z-index: 100;
+            right: 0;
+            top: 50%;
+            z-index: 100;
+            
+            transform: translate(130%,-100%);
+            padding: 1em;
+            
+           
+            img{
+                
+                width: 2rem;
+                color: $primary-color;
+                cursor: pointer;
+            }
+        }
+
+    }
+}

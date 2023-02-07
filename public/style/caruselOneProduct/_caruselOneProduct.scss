@@ -1,0 +1,113 @@
+
+.oneProductCaruselWrapper{
+    // background-color: black;
+    // width: 100%;
+    // min-height: 600px;
+    margin-top: 2em;
+    max-width: 100%;
+    color: #2A7C6F;
+    .caruselImg{
+        // background-color: aqua;
+        width: 50%;
+        margin: auto;
+        aspect-ratio: 4/3;
+        // min-height: 500px;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
+        
+    }
+    .indecator{
+        // background-color: yellowgreen;
+        width: 50%;
+        margin: auto;
+        min-height: 3em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1em;
+        .dots{
+            width: 0.7em;
+            aspect-ratio: 1/1;
+            border-radius: 50%;
+            background-color: white;
+            
+            outline: 2px solid $primary-color;
+            &:hover{
+                background-color: $primary-color;
+            }
+        }
+        
+    }
+    .descriptionWrapper{
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 1em;
+        width: 80%;
+        margin: auto;
+        .leftAside{
+            width: 65%;
+            min-height: 100px;
+            // background-color: aqua;
+        }
+        .rightAside{
+            width: 35%;
+            min-height: 100px;
+            // background-color: bisque;
+            display: flex;
+            flex-direction: column;
+            gap: 1em;
+            p{
+                text-align: end;
+            }
+            .colorComponent{
+                display: flex;
+                align-items: flex-end;
+                flex-direction: column;
+                justify-content: center;
+                gap: 1em;
+                .colorPicker{
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: center;
+                    gap: 1em;
+                    .color{
+                        width: 1.2rem;
+                        aspect-ratio: 1/1;
+                        border-radius: 50%;
+                        background-color: red;
+                        border: 1px solid gray;
+                    }
+                }
+            }
+            .custWrapper{
+                width: 100%;
+                #custmizeSelection{
+                    width: 100%;
+                }
+            }
+            .textareaCust{
+                #custumizeText{
+                    width: 100%;
+                }
+
+            }
+            .counterWrapper{
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: flex-end;
+                flex-direction: column;
+                input{
+                    width: 20%;
+                }
+            }
+        }
+    }
+}
+.hidden{
+    display: none;
+}

@@ -1,0 +1,97 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.displayProudactWrapper{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap:2em;
+    width: 100%;
+    min-height: 100vh;
+    margin-top:3em ;
+    .left{
+        width: 75%;
+        display: grid;
+        gap: 2em;
+        grid-template-columns: repeat(3,1fr);
+        .caruselCardWrapper{
+            width: 100%;
+            position: relative;
+            z-index: 50;
+            .ribbon{
+                padding: 0.1em 0.4em;
+                background-color: $primary-color;
+                position: absolute;
+                right: 0;
+                top: 0;
+                // border-radius: 0.5em;
+                color: white;
+                font-size: 1.2em;
+            }
+            img{
+                cursor: pointer;
+                width: 100%;
+            }
+            .deatils{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                width: 100%;
+              
+                h3{
+                    color: $primary-color;
+                    font-size: 1.1em;
+                }
+                p{
+                    color: $primary-color;
+                    font-size: 1em;
+                }
+                button{
+                    width: 100%;
+                    border: none;
+                    background-color: $primary-color;
+                    padding: 0.5em;
+                    color: white;
+                    font-size: 1.2em;
+                }
+            }
+        }
+    }
+    .right{
+        width: 25%;
+        height: 100px;
+        .filter-Wrapper{
+            display: flex;
+            flex-direction: column;
+            gap: 0.5em;
+            color: $primary-color;
+            cursor: pointer;
+            .categore{
+                .categore-title{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: flex-start;
+                    
+                }
+                .categore-Item{
+                    ul{
+                        width: 100%;
+                        list-style: none;
+                        li{
+                            &:hover{
+                                opacity: 0.5;
+                            }
+                        }
+                        .active{
+                            font-weight: bold;
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+}

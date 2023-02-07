@@ -1,0 +1,24 @@
+.contactUs{
+    
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem;
+    gap: 1em;
+    h2{
+        color: $primary-color;
+        font-size: 3em;
+    }
+    p{
+        margin: 0;
+    }
+    a{
+        text-decoration:none;
+        color: black;
+        &:hover{
+            color: $primary-color;
+        }
+    }
+}
